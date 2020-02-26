@@ -11,7 +11,89 @@ body{
   color: gray;
 }
 
+/* UTILITIES */
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix::after{
+  content:"";
+  display: table;
+  clear:both;
+}
+
+.button{
+  display: inline-block;
+  padding: 5px 30px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  line-height: 23px;
+}
+
+.menu-inline .botton:hover{
+  color:white;
+}
+
+.button-green{
+  background-color: #7bbb00;
+  border:0;
+  padding: 5px 10px;
+}
+
 /* Sezione Header */
 #main-header{
+  height: 560px;
+  background-color: #0b3259;
+  background-image: url(../img/background-header.png);
+  background-position: 115% 110%;
+  background-size: 1000px;
+  background-repeat: no-repeat;
+}
 
+.header-nav{
+  height: 80px;
+  font-size: 80%;
+  text-transform: uppercase;
+  line-height: 80px;
+}
+
+.header-nav a{
+  text-decoration: none;
+  color: white;
+}
+
+.header-nav-center a:hover,
+.header-nav-center a:focus{
+  color: green;
+}
+
+.header-nav .header-logo,
+.header-nav .header-nav-center,
+.header-nav .header-nav-right{
+  float: left;
+}
+
+.header-nav .header-logo{
+  width: 15%;
+  margin-top: 10px;
+}
+
+.header-nav .header-nav-center{
+  width: 45%;
+}
+
+.header-nav .header-nav-right{
+  width: 40%;
+  text-align: right;
+}
+
+/* Menu */
+.menu-inline{
+  list-style: none;
+}
+
+.menu-inline li{
+  display: inline-block;
+  padding: 0 10px;
 }
