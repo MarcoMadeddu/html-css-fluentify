@@ -25,10 +25,20 @@ body{
 
 .button{
   display: inline-block;
-  padding: 5px 30px;
   border-radius: 5px;
   border: 1px solid #fff;
   line-height: 23px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.button-blue{
+ padding: 5px 10px;
+}
+
+.button-large{
+  padding:20px;
 }
 
 .menu-inline .botton:hover{
@@ -38,7 +48,14 @@ body{
 .button-green{
   background-color: #7bbb00;
   border:0;
+}
+
+.button-default{
   padding: 5px 10px;
+}
+
+.w-50{
+  width: 50%;
 }
 
 /* Sezione Header */
@@ -97,3 +114,23 @@ body{
   display: inline-block;
   padding: 0 10px;
 }
+
+/* jumbotron */
+.jumbotron{
+  position: relative;
+  height: 480px;
+}
+
+.jumbotron-text{
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translateY(-50%);
+}
+
+.jumbotron-text h1{
+  font-size: 350%;
+  color: white;
+  margin-bottom: 30px;
+}
+/* Efficency */
