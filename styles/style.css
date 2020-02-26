@@ -11,6 +11,13 @@ body{
   color: gray;
 }
 
+/* typography */
+h2{
+  margin-bottom: 15px;
+  font-size: 180%;
+  color: #000;
+}
+
 /* UTILITIES */
 .container{
   width: 1200px;
@@ -56,6 +63,12 @@ body{
 
 .w-50{
   width: 50%;
+}
+
+.col-3{
+  float: left;
+  width: calc(100% / 3);
+  padding: 0 2%;
 }
 
 /* Sezione Header */
@@ -134,3 +147,51 @@ body{
   margin-bottom: 30px;
 }
 /* Efficency */
+
+#efficency{
+  padding: 40px 8%;
+  background-color: #d3d3d3;
+  text-align: center;
+}
+
+#efficency p {
+  font-size: 20px;
+}
+
+/* info */
+#info{
+  margin: 0 1%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.info-data-img{
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.info-data-heading{
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: #7bbb00;
+  font-size: 180%;
+}
+
+.info-data-heading::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20%;
+  height: 1px;
+  background-color: gray;
+  transform: translateX(-50%);
+}
+
+.info-data-text{
+  font-size: 120%;
+  line-height: 150%;
+}
